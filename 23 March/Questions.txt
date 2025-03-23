@@ -1,0 +1,130 @@
+Problem Statement
+There are N cities where Alice’s city is 1 and Bob’s city is N. There are M bi-directional roads between any two cities having a certain length. As Alice and Bob are childhood friends they want to meet  again in a city such that the 
+The absolute difference between the distance traveled by Alice and the distance traveled by Bob is as minimal as possible.
+Write a program to determine the minimum absolute difference between the distance traveled by Alice and the distance traveled by Bob. If they can’t meet then report -1.
+Input Format
+The first line of input will be two integers “N” and “M” denoting the number of cities and the number of paths.
+The next M lines of input will be 3 integers a,b, c denoting a bi-directional road between a and b of length c.
+Output Format
+print a single integer denoting the minimum absolute difference between the distance traveled by Alice and the distance traveled by Bob. If they can’t meet then print -1.
+Constraints
+2<= N , M <= 10^3
+1<= a,b<= N;
+1<= c <= 10^5
+Sample Testcase 1
+Testcase Input
+7 8 1 2 2 2 5 3 1 4 7 1 3 4 3 6 5 5 7 4 7 6 2 4 7 3
+Testcase Output
+1
+Explanation
+If they meet at node 5 then the distance traveled by Alice is 5 and distance traveled by Bob is 4 and the absolute difference is 1. It is the minimum absolute difference.
+￼
+Sample Testcase 2
+Testcase Input
+4 4 1 2 5 4 2 7 3 1 11 4 3 9
+Testcase Output
+2
+Explanation
+They can meet either at city 2 or city 3 . For both the case the absolute difference of distances will be 2.
+￼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problem Statement
+In a futuristic data processing system, you are assigned the task of optimizing bitwise computations for high-speed transmissions. The system receives three integers: X, Y, and Z, representing encrypted signals. Your mission is to decode the bitwise relationship between X and Y, apply specialized shifting techniques, and mask the results based on Z.
+However, due to signal interference, the system requires a dynamic shifting approach rather than a fixed shift operation. Additionally, a custom masking technique is needed to ensure secure transmission. Your task is to perform the following operations and provide the processed results.
+Operations to Perform:
+1. Bitwise Analysis:
+    * 		Compute the AND, OR, and XOR results of X and Y.
+2. Secure Masking for Transmission:
+    * 		Generate a bitmask from Z:
+        * 		If Z is even, the bitmask is ((1 << (Z % 10)) - 1).
+        * 		If Z is odd, the bitmask is ((1 << (Z % 5 + 2)) - 1).
+    * 		Apply the bitmask to AND, OR, and XOR results using bitwise AND with the mask to ensure secure transmission.
+Your challenge is to successfully process the data and output the transformed values while maintaining integrity under these dynamic constraints.
+Input Format
+The First line contains an integer X, representing the first signal.
+The Second line contains an integer Y, representing the second signal.
+The Third line contains an integer Z, used for shifting and masking.
+Output Format
+Print results of AND, OR, XOR operations in separate line.
+Print Generated Bitmask.
+Print the masked versions of AND, OR, XOR results in separate line.
+Constraints
+-10^6 <= X, Y, Z <= 10^6
+Sample Testcase 1
+Testcase Input
+45 29 38
+Testcase Output
+AND: 13 OR: 61 XOR: 48 Generated Bitmask: 255 Masked AND: 13 Masked OR: 61 Masked XOR: 48
+Explanation
+Bitwise Operations: AND = 13, OR = 61, XOR = 48 (basic bitwise calculations).
+Bitmask: Generated as 255, applied to results (no change in this case)
+Sample Testcase 2
+Testcase Input
+2 3 5
+Testcase Output
+AND: 2 OR: 3 XOR: 1 Generated Bitmask: 3 Masked AND: 2 Masked OR: 3 Masked XOR: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problem Statement
+In a futuristic data processing system, you are assigned the task of optimizing bitwise computations for high-speed transmissions. The system receives three integers: X, Y, and Z, representing encrypted signals. Your mission is to decode the bitwise relationship between X and Y, apply specialized shifting techniques, and mask the results based on Z.
+However, due to signal interference, the system requires a dynamic shifting approach rather than a fixed shift operation. Additionally, a custom masking technique is needed to ensure secure transmission. Your task is to perform the following operations and provide the processed results.
+Operations to Perform:
+1. Bitwise Analysis:
+    * 		Compute the AND, OR, and XOR results of X and Y.
+2. Secure Masking for Transmission:
+    * 		Generate a bitmask from Z:
+        * 		If Z is even, the bitmask is ((1 << (Z % 10)) - 1).
+        * 		If Z is odd, the bitmask is ((1 << (Z % 5 + 2)) - 1).
+    * 		Apply the bitmask to AND, OR, and XOR results using bitwise AND with the mask to ensure secure transmission.
+Your challenge is to successfully process the data and output the transformed values while maintaining integrity under these dynamic constraints.
+Input Format
+The First line contains an integer X, representing the first signal.
+The Second line contains an integer Y, representing the second signal.
+The Third line contains an integer Z, used for shifting and masking.
+Output Format
+Print results of AND, OR, XOR operations in separate line.
+Print Generated Bitmask.
+Print the masked versions of AND, OR, XOR results in separate line.
+Constraints
+-10^6 <= X, Y, Z <= 10^6
+Sample Testcase 1
+Testcase Input
+45 29 38
+Testcase Output
+AND: 13 OR: 61 XOR: 48 Generated Bitmask: 255 Masked AND: 13 Masked OR: 61 Masked XOR: 48
+Explanation
+Bitwise Operations: AND = 13, OR = 61, XOR = 48 (basic bitwise calculations).
+Bitmask: Generated as 255, applied to results (no change in this case)
+Sample Testcase 2
+Testcase Input
+2 3 5
+Testcase Output
+AND: 2 OR: 3 XOR: 1 Generated Bitmask: 3 Masked AND: 2 Masked OR: 3 Masked XOR: 1
+Explanation
+Bitwise Operations: AND = 2, OR = 3, XOR = 1 (basic bitwise results).
+Bitmask: Z is odd → Mask = 3. Applied, but no change in results.
